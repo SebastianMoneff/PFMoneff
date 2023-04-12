@@ -50,6 +50,10 @@ article {
 }
 /* ----COMPONENTES---- */
 
+.logo-header {
+    
+}
+
 /* ----FONTS---- */
 
 /* ----PAGINA INDEX---- */
@@ -66,7 +70,10 @@ article {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .portadaindextexto {
@@ -90,9 +97,10 @@ article {
 
 header {
     background-color: #fca89dbd;
+    width: 100vw;
+    height: 20vh;
     padding: 15px;
     display: flex;
-
     justify-content: space-around;
     align-items: center;
 }
@@ -146,10 +154,8 @@ footer {
     width: 400px;
     justify-content: space-around;
     align-items: center;
-    
     padding-left: 10px;
     padding-right: 10px;
-
 }
 
 .producto-vinilos {
@@ -157,7 +163,6 @@ footer {
     display: flex;
     justify-content: center;
     align-content: center;
-
 }
 
 .producto-cuadros {
@@ -165,11 +170,84 @@ footer {
     display: flex;
     justify-content: center;
     align-content: center;
-
 }
-
-
 
 /* ----PAGINA CONTACTO---- */
 
+.contacto-whatsapp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.contacto-facebook {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.contacto-instagram {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.contacto-pinterest {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.contacto-mapa {
+    display: flex;
+    width: 90vw;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
 /* ----MEDIA QUERIES---- */
+
+@media (max-width:768px) {
+
+.header {
+    background-color: #fca89dbd;
+    width: 100vw;
+    height: 20vh;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navlist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    display: none;
+}
+}
+
+/**/
