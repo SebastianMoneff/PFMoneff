@@ -1,0 +1,175 @@
+
+/* ----RESETEO---- */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    color: #be418a;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    text-shadow: none;
+}
+ul,ol {
+    list-style-type: none;
+}
+
+/* ----BODY---- */
+
+body{
+    background-image: url(../img/flowers.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+div {
+    display: flex;
+    align-items: center;
+    background-color: #fca89dab;
+    border: double rgb(252, 249, 64);
+}
+
+h1{
+    color: #be418a;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    color: #be418a;
+    font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+font-size: 'Roboto', sans-serif;
+}
+
+article {
+    font-family: 'Roboto', sans-serif;
+}
+/* ----COMPONENTES---- */
+
+/* ----FONTS---- */
+
+/* ----PAGINA INDEX---- */
+.section-index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.div-index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.portadaindextexto {
+    background-color: rgba(255, 105, 180, 0.349);
+    padding: 10px;
+    border-radius: 10px;
+    color: mediumslateblue;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap: 15px;
+    border-style: dotted;
+    border-color: mediumslateblue;
+}
+
+.portadaindextextoh2 {
+    font-size: 3rem;
+}
+
+/*----HEADERS----*/
+
+header {
+    background-color: #fca89dbd;
+    padding: 15px;
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navlist {
+    display: flex;
+    gap: 25px;
+}
+
+/* ----FOOTER---- */
+
+footer {
+    background-color: #998b82;
+
+    display: flex;
+    justify-content: center;
+
+}
+
+/* ----PAGINA CATALOGO---- */
+
+.section-vinilos {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: 60px, repeat(5, 400px);
+    grid-template-areas: "vinilos vinilos vinilos";
+    row-gap: 30px;
+    column-gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.section-cuadros {
+    display: grid;
+    grid-template-columns: repeat (3, 400px);
+    grid-template-rows: 60px, repeat(2, 400px);
+    grid-template-areas: "cuadros cuadros cuadros";
+    row-gap: 30px;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.producto {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 400px;
+    justify-content: space-around;
+    align-items: center;
+    
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.producto-vinilos {
+    grid-area: vinilos;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.producto-cuadros {
+    grid-area: cuadros;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
+
+
+/* ----PAGINA CONTACTO---- */
+
+/* ----MEDIA QUERIES---- */
