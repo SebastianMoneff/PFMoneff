@@ -1,22 +1,16 @@
 
 /* ----RESETEO---- */
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,700;1,200&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-a {
-    color: #be418a;
-    font-family: 'Roboto', sans-serif;
-    text-decoration: none;
-    text-shadow: none;
-}
-ul,ol {
-    list-style-type: none;
+    font-family: 'Nunito', sans-serif;
 }
 
-/* ----BODY---- */
+/* ----BODY/COMPONENTES---- */
 
 body{
     background-image: url(../img/flowers.jpg);
@@ -27,43 +21,17 @@ body{
 div {
     display: flex;
     align-items: center;
-    background-color: #fca89dab;
-    border: double rgb(252, 249, 64);
 }
 
-h1{
-    color: #be418a;
-    font-family: 'Roboto', sans-serif;
-}
-
-h2 {
-    color: #be418a;
-    font-family: 'Roboto', sans-serif;
-}
-
-h3 {
-font-size: 'Roboto', sans-serif;
-}
-
-article {
-    font-family: 'Roboto', sans-serif;
-}
-/* ----COMPONENTES---- */
-
-.logo-header {
-    
-}
-
-/* ----FONTS---- */
 
 /* ----PAGINA INDEX---- */
+
 .section-index {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-
 }
 
 .div-index {
@@ -93,28 +61,51 @@ article {
     font-size: 3rem;
 }
 
-/*----HEADERS----*/
+/*----HEADERS / BARRA DE NAVEGACION / LOGO DE LA PAGINA----*/
 
-header {
-    background-color: #fca89dbd;
-    width: 100vw;
-    height: 20vh;
-    padding: 15px;
+.khalo-header {
+    background-color: #fd6e8bad;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    height: 100px;
+    padding: 40px;
+}
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color:#40202a
+}
+a:hover {
+    color:#fd135a;
+}
+.khalo-header .nav-links .item-list:hover {
+    transform: scale(1.1);
+    color: #fd135a;
 }
 
-.navlist {
-    display: flex;
-    gap: 25px;
+.logo-div {
+    cursor: pointer;
+}
+.logo-div img {
+    height: 70px;
+    width: auto;
+    transition: all 0.4s;
+}
+.logo-div img:hover {
+    transform: scale(1.2);
+    transition: all 0.4s;
 }
 
 /* ----FOOTER---- */
 
 footer {
     background-color: #998b82;
-
     display: flex;
     justify-content: center;
 
@@ -226,28 +217,39 @@ footer {
 
 /* ----MEDIA QUERIES---- */
 
-@media (max-width:768px) {
-
-.header {
-    background-color: #fca89dbd;
-    width: 100vw;
-    height: 20vh;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+@media (min-width: 0px) and (max-width: 599px) {
+    .header-form {
+        display: none;
+    }
+    
 }
-
-.navlist {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+@media (min-width: 600px) and (max-width: 1200px) {
+    .khalo-header {
+        display: flex;
+    }
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        justify-content: space-between;
+    }
+    .header-form {
+        display: none;
+    }
 }
-
-form {
-    display: none;
+@media (min-width: 1201px) {
+    .khalo-header {
+        display: flex;
+    }
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        justify-content: space-between;
+    }
+    .header-form {
+        display: block;
+    }
 }
-}
-
-/**/
