@@ -1,64 +1,20 @@
+/* DISFRUTE MUCHISIMO ESTE CURSO! */
 
-/* ----RESETEO---- */
-
+/* ------------------------------RESETEO GENERAL / GLOBALES------------------------------ */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,700;1,200&display=swap');
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
-    font-size: 22px;
 }
 
-/* ----BODY/COMPONENTES---- */
-
+/* ------------------------------BODY / COMPONENTES / BOTONES------------------------------ */
 body{
-background-image: url(../img/flowers.jpg);
-background-size: contain;
+background-image: url(../img/background.jpg);
 }
 
-/* ----PAGINA INDEX---- */
-
-.section-index {
-    width: 90%;
-    margin: 0 auto;
-    padding: 60px 0;
-    max-width: 1200px;
-    min-height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 3.5em;
-    flex-wrap: wrap;
-}
-.card-index {
-    background: white;
-    padding-bottom: 3em;
-    flex-basis: 280px;
-    max-width: 450px;
-    flex-grow: 1;
-}
-.card-index-content {
-    width: 90%;
-    margin: 0 auto;
-}
-.card-index-picture { 
-    width: 90%;
-    margin: 0 auto;
-    background: cornflowerblue;
-    position: relative;
-    bottom: 2em;
-}
-.card-index-img {
-    width: 100%;
-}
-.card-index-text {
-    margin-bottom: 1em;
-}
-
-/*----HEADERS / BARRA DE NAVEGACION / LOGO DE LA PAGINA----*/
-
+/* ------------------------------HEADER / BARRA DE NAVEGACION / LOGO------------------------------ */
 .khalo-header {
     background-color: #fd6e8bad;
     display: flex;
@@ -107,7 +63,6 @@ input {
     background-color: #fd6e8bad;
     margin: 5px 5px;
 }
-
 input:hover {
     font-family: 'Nunito', sans-serif;
     color:#fd135a;
@@ -116,122 +71,84 @@ input:hover {
     transition: all 0.4s;
 }
 
-/* ----FOOTER---- */
+/* ------------------------------PAGINA INDEX------------------------------ */
+.section-index {
+    width: 90%;
+    margin: 0 auto;
+    padding: 60px 0;
+    max-width: 1200px;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3.5em;
+    flex-wrap: wrap;
+}
+.card-index {
+    background: white;
+    padding-bottom: 3em;
+    flex-basis: 280px;
+    max-width: 450px;
+    flex-grow: 1;
+}
+.card-index-content {
+    width: 90%;
+    margin: 0 auto;
+}
+.card-index-picture { 
+    width: 90%;
+    margin: 0 auto;
+    background: cornflowerblue;
+    position: relative;
+    bottom: 2em;
+}
+.card-index-img {
+    width: 100%;
+}
+.card-index-text {
+    margin-bottom: 1em;
+}
+
+/* ------------------------------PAGINA CATALOGO------------------------------ */
+.section-producto { 
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.div-producto {
+    width: 100%;
+    text-align: center;
+    margin: 20px;
+    background-color: #fd6e8bad;
+    border-radius: 10px;
+}
+.producto {
+    text-align: center;
+    background-color: #fd6e8bad;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.producto img {
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+/* ------------------------------PAGINA CONTACTO------------------------------ */
+.section-contacto {
+    display: flex;
+}
+/* ------------------------------FOOTER------------------------------ */
 
 footer {
     background-color: #998b82;
     display: flex;
     justify-content: center;
-
 }
 
-/* ----PAGINA CATALOGO---- */
-
-.section-vinilos {
-    display: grid;
-    
-    grid-template-columns: repeat(3, 400px);
-    grid-template-rows: 60px, repeat(5, 400px);
-    grid-template-areas: "vinilos vinilos vinilos";
-    row-gap: 30px;
-    column-gap: 30px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-.section-cuadros {
-    display: grid;
-    grid-template-columns: repeat (3, 400px);
-    grid-template-rows: 60px, repeat(2, 400px);
-    grid-template-areas: "cuadros cuadros cuadros";
-    row-gap: 30px;
-    justify-content: center;
-    align-items: center;
-    column-gap: 30px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-.producto {
-    display: flex;
-    flex-direction: column;
-    height: 400px;
-    width: 400px;
-    justify-content: space-around;
-    align-items: center;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.producto-vinilos {
-    grid-area: vinilos;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-
-.producto-cuadros {
-    grid-area: cuadros;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-
-/* ----PAGINA CONTACTO---- */
-
-.contacto-whatsapp {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-.contacto-facebook {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-.contacto-instagram {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-.contacto-pinterest {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-.contacto-mapa {
-    display: flex;
-    width: 90vw;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-/* ----MEDIA QUERIES---- */
-
+/* ------------------------------MEDIA QUERIES------------------------------ */
 @media (min-width: 0px) and (max-width: 599px) {
     .header-form {
         display: none;
