@@ -13,6 +13,15 @@
 body{
 background-image: url(../img/background.jpg);
 }
+li {
+    list-style: none;
+}
+li:hover {
+    transform: scale(1.2);
+}
+video {
+    width: 400px;
+}
 
 /* ------------------------------HEADER / BARRA DE NAVEGACION / LOGO------------------------------ */
 .khalo-header {
@@ -85,11 +94,12 @@ input:hover {
     flex-wrap: wrap;
 }
 .card-index {
-    background: white;
+    background-color: #fd6e8bad;
     padding-bottom: 3em;
     flex-basis: 280px;
     max-width: 450px;
     flex-grow: 1;
+    border-radius: 10px;
 }
 .card-index-content {
     width: 90%;
@@ -104,6 +114,7 @@ input:hover {
 }
 .card-index-img {
     width: 100%;
+    border-radius: 10px;
 }
 .card-index-text {
     margin-bottom: 1em;
@@ -128,6 +139,8 @@ input:hover {
     background-color: #fd6e8bad;
     margin: 10px;
     border-radius: 10px;
+    width: 400px;
+    height: 400px;
 }
 
 .producto img {
@@ -139,13 +152,106 @@ input:hover {
 /* ------------------------------PAGINA CONTACTO------------------------------ */
 .section-contacto {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+.div-contacto {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin: 20px;
+    background-color: #fd6e8bad;
+    border-radius: 10px;
+}
+.contacto {
+    background-color: #fd6e8bad;
+    margin: 10px;
+    text-align: center;
+    justify-content:center ;
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+}
+.contacto-mapa {
+    overflow: hidden;
+    background-color: #fd6e8bad;
+    margin: 10px;
+    text-align: center;
+    justify-content:center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    border-radius: 30px;
+}
+.contacto img:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+    cursor: pointer;
+}
+.contacto-mapa img:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+/* ------------------------------PAGINA DO IT YOURSELF------------------------------ */
+.section-diy {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.div-diy {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin: 20px;
+    background-color: #fd6e8bad;
+    border-radius: 10px;
+}
+.diy {
+    background-color: #fd6e8bad;
+    margin: 10px;
+    text-align: center;
+    justify-content:center ;
+    width: 500px;
+    height: 300px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.diyb {
+    background-color: #fd6e8bad;
+    margin: 10px;
+    text-align: center;
+    justify-content:center ;
+    width: 500px;
+    height: 800px;
+    border-radius: 30px;
+}
+
+/* ------------------------------PAGINA VENDEDORAS------------------------------ */
+.section-vendedoras {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.div-vendedoras {
+    width: 96%;
+    text-align: center;
+    justify-content: center;
+    margin: 20px;
+    background-color: #fd6e8bad;
+    border-radius: 10px;
+}
+
 /* ------------------------------FOOTER------------------------------ */
 
 footer {
-    background-color: #998b82;
+    background-color: #fd6e8bad;
     display: flex;
     justify-content: center;
+    padding: 10px;
 }
 
 /* ------------------------------MEDIA QUERIES------------------------------ */
